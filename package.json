@@ -1,10 +1,10 @@
 {
   "name": "@garpix/base-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "garpix base-api",
   "author": "anatoly",
   "license": "MIT",
-  "repository": "@garpix/base-api",
+  "repository": "https://github.com/GARPIX-Frontend/base_api",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
@@ -24,7 +24,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "public": "yarn build && npm publish"
+    "public": "yarn build && npm publish --access public"
   },
   "peerDependencies": {
     "react": "^16.0.0"
